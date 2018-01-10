@@ -29,7 +29,7 @@ $('#canvasSubmit').click(function (event) {
   makeGrid();
 });
 
-$('#pixel_canvas').on('click', 'td', function () {
+$('#pixel_canvas').on('mousedown', 'td', function () {
   var color = $('input[type = "color"]').val();
   $(this).attr('bgcolor', color);
 });

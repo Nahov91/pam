@@ -1,15 +1,18 @@
 body {
     text-align: center;
+    font-family: Roboto;
+    color: #555;
+    background-color: #eee;
 }
 
 h1 {
-    font-family: Monoton;
-    font-size: 70px;
+    font-size: 24px;
     margin: 0.2em;
 }
 
 h2 {
     margin: 1em 0 0.25em;
+    font-size: 20px;
 }
 
 h2:first-of-type {
@@ -19,16 +22,67 @@ h2:first-of-type {
 table,
 tr,
 td {
-    border: 1px solid grey;
+    border: 1px solid #ccc;
 }
 
 table {
     border-collapse: collapse;
-    margin: 0 auto;
 }
 
 .tableContainer {
     max-height: 600px;
+    margin: 5%;
+}
+
+.pageHeader {
+  background-color: #03A9F4;
+  color: #fff;
+  text-align: left;
+  padding: 5px 5px 150px 25px;
+}
+
+.contentWrapper {
+  background-color: #fff;
+  width: 80%;
+  min-width: 600px;
+  min-height: 600px;
+  margin: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgba(66, 66, 66, 0.6);
+  margin-top: -59px;
+  padding-bottom: 2%;
+}
+
+.heading {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+#inputHeight, #inputWidth {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid grey;
+  margin: 25px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#canvasSubmit {
+  padding: 5px 16px;
+  background-color: #00A7FF;
+  border-radius: 2px;
+  border: none;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #fff;
+  box-shadow: 1px 1px 6px rgba(66, 66, 66, 0.6);
+}
+
+#pixel_canvas {
+  margin: auto;
 }
 
 tr {
