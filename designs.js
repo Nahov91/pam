@@ -1,11 +1,8 @@
 // Select color input
 // Select size input
 
-// When size is submitted by the user, call makeGrid()
-
-var color = document.getElementById('colorPicker').value;
-var subButton = document.getElementById('canvasSubmit');
-var canvas = document.getElementById('pixel_canvas');
+//var subButton = document.getElementById('canvasSubmit');
+//var canvas = document.getElementById('pixel_canvas');
 
 function makeGrid() {
   $('#pixel_canvas').children().remove();
@@ -24,6 +21,7 @@ function makeGrid() {
 
   console.log('width= ' + gridWidth);
   console.log('Height= ' + gridHeight);
+  console.log($('input[type = "color"]').val());
 }
 
 $('#canvasSubmit').click(function (event) {
@@ -31,8 +29,7 @@ $('#canvasSubmit').click(function (event) {
   makeGrid();
 });
 
-$('td').on('click', function () {
-  $(this).bgColor = color;
+$('#pixel_canvas').on('click', 'td', function () {
+  var color = $('input[type = "color"]').val();
+  $(this).attr('bgcolor', color);
 });
-
-console.log(color);
